@@ -34,7 +34,7 @@ redismaster
 redisslave0[1:3]
 
 [redis-sentinel]
-redissentinel0[1:3].example.com redis_sentinel=True
+redissentinel0[1:3] redis_sentinel=True
 ```
 
 Above, we've added three more hosts in the **redis-sentinel** group (though this group serves no purpose within the role, it's merely an identifier), and set the `redis_sentinel` variable inline within the inventory file.
